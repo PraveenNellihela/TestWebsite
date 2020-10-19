@@ -1,0 +1,75 @@
+/**** Base styles ****/
+
+* {
+    box-sizing: border-box;
+}
+
+#sect1, #sect2, #sect3{
+    position: relative;
+    background-color: rgb(156, 148, 148);
+    border: black solid 1px;
+    margin: 1%;  
+}
+
+#mainTitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+div>h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;  
+}
+
+div>p{
+    font-family: sans-serif;
+    position: relative;
+    top: 15px;
+    padding: 10px;
+}
+
+#head1, #head2, #head3{
+    position: absolute; 
+    top: 0px;
+    right: 0px;
+    margin-top: 0px;
+    padding: 5px 10px 5px 10px;
+    border: black solid 1px; 
+}
+#head1{
+    background-color: rgb(120, 174, 211); 
+}
+#head2{
+    background-color: rgb(243, 123, 102); 
+}
+#head3{
+    background-color: rgb(148, 218, 127); 
+}
+
+/**** Media Queries ****/
+
+@media(min-width:992px){
+    #sect1, #sect2, #sect3{
+        width: 31.3%;
+        float: left;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    #sect1, #sect2{
+        width: 48%;
+        float: left;
+    }
+    #sect3{
+        width: 98%;
+        float: left;       
+    }
+}
+
+@media(max-width:767px){
+    #sect1, #sect2, #sect3{
+        width: 98%;
+        float: left;
+    }   
+}
